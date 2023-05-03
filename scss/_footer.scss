@@ -2,7 +2,8 @@
 
 .footer{
     background-color: hsl(192, 100%, 9%);
-    padding: 50px 15px;
+    padding-block-start: 50px;
+    padding-inline: 5%;
     color: white;
     padding-block-start: 120px;
 
@@ -14,7 +15,7 @@
 
         &-detailbox{
             display: flex;
-            margin-top: 20px;
+            margin-block-start: 20px;
 
             p{
                 font-size: 1.7ch;
@@ -22,14 +23,14 @@
 
             &-icon{
                 font-size: 2.2ch;
-                margin-right: 20px;
+                margin-inline-end: 20px;
             }
         }
 
     }
 
     &-middle{
-        margin-top: 40px;
+        margin-block-start: 40px;
 
         &-sitemap{
             display: flex;
@@ -76,7 +77,7 @@
 @media (min-width:576px){
 
     .footer{
-        padding-inline: 8%;
+        padding-inline: 5%;
     }
 
 }

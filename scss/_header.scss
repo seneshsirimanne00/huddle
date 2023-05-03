@@ -9,7 +9,8 @@
     &-header{
         display: flex;
         justify-content: space-between;
-        padding: 20px 15px;
+        padding-block-start:20px ;
+        padding-inline: 5%;
         align-items: center;
         &-box {
             &-logo {
@@ -28,7 +29,7 @@
     }
 
     &-container{
-        padding: 20px 15px;
+        padding: 20px 5%;
 
         &-top{
             display: flex;
@@ -108,7 +109,7 @@
 @media (min-width:768px){
 
     .hero{
-        min-height: 500px;
+        min-height: 450px;
 
         &-header{
             padding: 40px 65px;
@@ -133,6 +134,7 @@
             
             &-top{
                 text-align: left;
+                align-items: flex-start;
             }
 
             &-bottom{
@@ -148,7 +150,7 @@
 @media (min-width:1200px){ 
 
     .hero{
-        min-height: 700px;
+        min-height: 600px;
 
         &-header{
             padding: 40px 80px;
@@ -158,8 +160,8 @@
         &-container{
 
             &-top{
-                padding: 0 60px 0 80px;
                 align-items: flex-start;
+                gap:10%;
                 
                 h1{
                     font-size: 3.7ch;
@@ -177,7 +179,7 @@
 
             &-bottom{
                 &-image{
-                    height: 500px;
+                    height: 450px;
                 }
             }
         }

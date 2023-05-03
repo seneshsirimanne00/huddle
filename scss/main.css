@@ -17,7 +17,9 @@
 .hero-header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 15px;
+  -webkit-padding-before: 20px;
+          padding-block-start: 20px;
+  padding-inline: 5%;
   align-items: center;
 }
 .hero-header-box-logo {
@@ -33,7 +35,7 @@
   box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.06);
 }
 .hero-container {
-  padding: 20px 15px;
+  padding: 20px 5%;
 }
 .hero-container-top {
   display: flex;
@@ -92,7 +94,7 @@
 }
 @media (min-width: 768px) {
   .hero {
-    min-height: 500px;
+    min-height: 450px;
   }
   .hero-header {
     padding: 40px 65px;
@@ -112,6 +114,7 @@
   }
   .hero-container-top {
     text-align: left;
+    align-items: flex-start;
   }
   .hero-container-bottom-image {
     height: 300px;
@@ -119,14 +122,14 @@
 }
 @media (min-width: 1200px) {
   .hero {
-    min-height: 700px;
+    min-height: 600px;
   }
   .hero-header {
     padding: 40px 80px;
   }
   .hero-container-top {
-    padding: 0 60px 0 80px;
     align-items: flex-start;
+    gap: 10%;
   }
   .hero-container-top h1 {
     font-size: 3.7ch;
@@ -139,12 +142,13 @@
     padding: 15px 30px;
   }
   .hero-container-bottom-image {
-    height: 500px;
+    height: 450px;
   }
 }
 /* middle section styles */
 .middle {
   padding: 22px 20px;
+  padding-inline: 5%;
   text-align: center;
 }
 .middle-card {
@@ -217,17 +221,16 @@
   .middle-card {
     padding: 40px 20px 40px 88px;
     flex-direction: row-reverse;
+    gap: 10%;
   }
   .middle-card-top {
-    width: 40%;
+    width: 50%;
   }
   .middle-card-top-image {
-    height: 290px;
+    height: 272px;
   }
   .middle-card-bottom {
-    width: 60%;
-    -webkit-padding-end: 20%;
-            padding-inline-end: 20%;
+    width: 50%;
   }
   .middle-card-bottom h3 {
     font-size: 3ch;
@@ -244,14 +247,14 @@
   .reverse-card .middle-card-bottom {
     -webkit-padding-end: 0;
             padding-inline-end: 0;
-    -webkit-padding-start: 10%;
-            padding-inline-start: 10%;
   }
 }
 /* footer section styles */
 .footer {
   background-color: hsl(192, 100%, 9%);
-  padding: 50px 15px;
+  -webkit-padding-before: 50px;
+          padding-block-start: 50px;
+  padding-inline: 5%;
   color: white;
   -webkit-padding-before: 120px;
           padding-block-start: 120px;
@@ -262,17 +265,20 @@
 }
 .footer-top-detailbox {
   display: flex;
-  margin-top: 20px;
+  -webkit-margin-before: 20px;
+          margin-block-start: 20px;
 }
 .footer-top-detailbox p {
   font-size: 1.7ch;
 }
 .footer-top-detailbox-icon {
   font-size: 2.2ch;
-  margin-right: 20px;
+  -webkit-margin-end: 20px;
+          margin-inline-end: 20px;
 }
 .footer-middle {
-  margin-top: 40px;
+  -webkit-margin-before: 40px;
+          margin-block-start: 40px;
 }
 .footer-middle-sitemap {
   display: flex;
@@ -311,7 +317,7 @@
 
 @media (min-width: 576px) {
   .footer {
-    padding-inline: 8%;
+    padding-inline: 5%;
   }
 }
 @media (min-width: 992px) {
