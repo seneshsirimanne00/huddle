@@ -1,0 +1,100 @@
+/* footer section styles */
+
+.footer{
+    background-color: hsl(192, 100%, 9%);
+    padding: 50px 15px;
+    color: white;
+    padding-block-start: 120px;
+
+    &-top{
+        &-logo{
+            height: 28px;
+            filter: brightness(0) invert(1);
+        }
+
+        &-detailbox{
+            display: flex;
+            margin-top: 20px;
+
+            p{
+                font-size: 1.7ch;
+            }
+
+            &-icon{
+                font-size: 2.2ch;
+                margin-right: 20px;
+            }
+        }
+
+    }
+
+    &-middle{
+        margin-top: 40px;
+
+        &-sitemap{
+            display: flex;
+            flex-direction: column;
+            padding-inline-start: 20px;
+            a{
+                color: white;
+                cursor: pointer;
+                margin-top: 20px;
+                font-size: 2ch;
+            }
+
+        }
+    }
+
+    &-bottom{
+        margin-top: 30px;
+        text-align: center;
+
+        &-logobox{
+            display: flex;
+            justify-content: center;
+
+            &-circle{
+                padding: 4px 7px;
+                margin: 0 7px;
+                border-radius: 30px;
+                border: 1px solid white;
+
+                a{
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        p{
+            margin-top: 20px;
+            font-size: 1.2ch;
+        }
+    }
+}
+
+@media (min-width:576px){
+
+    .footer{
+        padding-inline: 8%;
+    }
+
+}
+
+@media (min-width:992px){
+
+    .footer{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        align-items: end;
+    }
+
+    .socialmedia{
+        height: 60%;
+        margin-block-start: 40%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

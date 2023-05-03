@@ -1,0 +1,12 @@
+@use "colors";
+@use "fonts";
+@use "common";
+@use "header";
+@use "middle";
+@use "footer";
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    padding: 0;
+}
