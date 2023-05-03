@@ -252,12 +252,12 @@
 /* footer section styles */
 .footer {
   background-color: hsl(192, 100%, 9%);
-  -webkit-padding-before: 50px;
-          padding-block-start: 50px;
   padding-inline: 5%;
   color: white;
   -webkit-padding-before: 120px;
           padding-block-start: 120px;
+  -webkit-padding-after: 50px;
+          padding-block-end: 50px;
 }
 .footer-top-logo {
   height: 28px;
